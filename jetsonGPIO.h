@@ -85,6 +85,28 @@ enum jetsonTX1GPIONumber {
        gpio219 = 219,    // J21 - Pin 29 - Output - GPIO19_AUD_RST
 } ;
 
+enum jetsonTX2GPIONumber {
+       gpio297 = 297,      // J21 - Pin 32 - Unused - AO_DMIC_IN_CLK
+       gpio296 = 296,    // J21 - Pin 16 - Unused - AO_DMIC_IN_DAT
+       gpio397 = 397,    // J21 - Pin 13 - Bidir  - GPIO20/AUD_INT
+       gpio389 = 389,    // J21 - Pin 33 - Bidir  - GPIO11_AP_WAKE_BT
+       gpio481 = 481,    // J21 - Pin 18 - Input  - GPIO16_MDM_WAKE_AP
+       gpio298 = 298,    // J21 - Pin 31 - Input  - GPIO9_MOTION_INT
+       gpio388 = 388,    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
+       gpio398 = 398,    // J21 - Pin 29 - Output - GPIO19_AUD_RST
+} ;
+
+enum jetsonXavierGPIONumber {
+       gpio257 = 257,    // J21 - Pin 32 - Unused - GPIO9_CAN1_GPIO0_DMIC_CLK
+       gpio256 = 256,    // J21 - Pin 16 - Unused - GPIO8_AO_DMIC_IN_DAT
+       gpio424 = 424,    // J21 - Pin 13 - Bidir  -     PWM01
+       gpio248 = 248,    // J21 - Pin 33 - Bidir  -     CAN1_DOUT
+       gpio344 = 344,    // J21 - Pin 18 - Input  -     GPIO35_PWM3
+       gpio250 = 250,    // J21 - Pin 31 - Input  -     CAN0_DOUT
+       gpio249 = 249,    // J21 - Pin 37 - Output -     CAN1_DIN
+       gpio251 = 251,    // J21 - Pin 29 - Output - 	CAN0_DIN
+} ;
+
 
 int gpioExport ( jetsonGPIO gpio ) ;
 int gpioUnexport ( jetsonGPIO gpio ) ;
