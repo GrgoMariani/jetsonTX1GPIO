@@ -57,15 +57,15 @@ enum pinDirections {
 } ;
 
 enum pinValues {
-    low = 0,
-    high = 1,
-    off = 0,  // synonym for things like lights
-    on = 1
+    low       = 0,
+    high      = 1,
+    off       = 0,  // synonym for things like lights
+    on        = 1
 }  ;
 
 enum jetsonGPIONumber {
-    gpio57  =  57,    // J3A1 - Pin 50
-	gpio160 = 160,	  // J3A2 - Pin 40	
+       gpio57  =  57,    // J3A1 - Pin 50
+	gpio160 = 160,  // J3A2 - Pin 40	
 	gpio161 = 161,    // J3A2 - Pin 43
 	gpio162 = 162,    // J3A2 - Pin 46
 	gpio163 = 163,    // J3A2 - Pin 49
@@ -86,27 +86,37 @@ enum jetsonTX1GPIONumber {
 } ;
 
 enum jetsonTX2GPIONumber {
-       gpio297 = 297,      // J21 - Pin 32 - Unused - AO_DMIC_IN_CLK
-       gpio296 = 296,    // J21 - Pin 16 - Unused - AO_DMIC_IN_DAT
-       gpio397 = 397,    // J21 - Pin 13 - Bidir  - GPIO20/AUD_INT
-       gpio389 = 389,    // J21 - Pin 33 - Bidir  - GPIO11_AP_WAKE_BT
-       gpio481 = 481,    // J21 - Pin 18 - Input  - GPIO16_MDM_WAKE_AP
-       gpio298 = 298,    // J21 - Pin 31 - Input  - GPIO9_MOTION_INT
-       gpio388 = 388,    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
-       gpio398 = 398,    // J21 - Pin 29 - Output - GPIO19_AUD_RST
+       gpio297 = 297,    // J21 - Pin 32 - ??? - AO_DMIC_IN_CLK
+       gpio296 = 296,    // J21 - Pin 16 - ??? - AO_DMIC_IN_DAT
+       gpio397 = 397,    // J21 - Pin 13 - ??? - GPIO20/AUD_INT
+       gpio389 = 389,    // J21 - Pin 33 - ??? - GPIO11_AP_WAKE_BT
+       gpio481 = 481,    // J21 - Pin 18 - ??? - GPIO16_MDM_WAKE_AP
+       gpio298 = 298,    // J21 - Pin 31 - ??? - GPIO9_MOTION_INT
+       gpio388 = 388,    // J21 - Pin 37 - ??? - GPIO8_ALS_PROX_INT
+       gpio398 = 398,    // J21 - Pin 29 - ??? - GPIO19_AUD_RST
 } ;
 
 enum jetsonXavierGPIONumber {
-       gpio257 = 257,    // J21 - Pin 32 - Unused - GPIO9_CAN1_GPIO0_DMIC_CLK
-       gpio256 = 256,    // J21 - Pin 16 - Unused - GPIO8_AO_DMIC_IN_DAT
-       gpio424 = 424,    // J21 - Pin 13 - Bidir  -     PWM01
-       gpio248 = 248,    // J21 - Pin 33 - Bidir  -     CAN1_DOUT
-       gpio344 = 344,    // J21 - Pin 18 - Input  -     GPIO35_PWM3
-       gpio250 = 250,    // J21 - Pin 31 - Input  -     CAN0_DOUT
-       gpio249 = 249,    // J21 - Pin 37 - Output -     CAN1_DIN
-       gpio251 = 251,    // J21 - Pin 29 - Output - 	CAN0_DIN
+       gpio257 = 257,    // J21 - Pin 32 - ??? - GPIO9_CAN1_GPIO0_DMIC_CLK
+       gpio256 = 256,    // J21 - Pin 16 - ??? - GPIO8_AO_DMIC_IN_DAT
+       gpio424 = 424,    // J21 - Pin 13 - ??? -     PWM01
+       gpio248 = 248,    // J21 - Pin 33 - ??? -     CAN1_DOUT
+       gpio344 = 344,    // J21 - Pin 18 - ??? -     GPIO35_PWM3
+       gpio250 = 250,    // J21 - Pin 31 - ??? -     CAN0_DOUT
+       gpio249 = 249,    // J21 - Pin 37 - ??? -     CAN1_DIN
+       gpio251 = 251,    // J21 - Pin 29 - ??? -     CAN0_DIN
 } ;
 
+enum jetsonNanoGPIONumber {
+       gpio168 = 168,    // J21 - Pin 32 - ??? -     LCD_BL_PWM
+       gpio232 = 232,    // J21 - Pin 16 - ??? -     SPI_2_CS1
+       gpio14  = 14,     // J21 - Pin 13 - ??? -     SPI_2_SCK
+       gpio38  = 38,     // J21 - Pin 33 - ??? -     GPIO_PE6
+       gpio15  = 15,     // J21 - Pin 18 - ??? -     SPI_2_CS0
+       gpio200 = 200,    // J21 - Pin 31 - ??? -     GPIO_PZ0
+       gpio12  = 12,     // J21 - Pin 37 - ??? -     SPI_2_MOSI
+       gpio149 = 149,    // J21 - Pin 29 - ??? -     CAM_AF_EN
+} ;
 
 int gpioExport ( jetsonGPIO gpio ) ;
 int gpioUnexport ( jetsonGPIO gpio ) ;
