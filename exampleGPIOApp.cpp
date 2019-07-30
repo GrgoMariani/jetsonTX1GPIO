@@ -40,8 +40,8 @@ int main(int argc, char *argv[]){
     cout << "Testing the GPIO Pins" << endl;
 
     // IMPORTANT: Check the jetsonGPIO.h for the pins, use only the pins defined in the enum of your board
-    jetsonTX1GPIONumber redLED      = gpio219 ;     // Ouput
-    jetsonTX1GPIONumber pushButton  = gpio38 ;      // Input
+    jetsonTX1GPIONumber redLED      = jetsontx1_pin29 ;     // Ouput
+    jetsonTX1GPIONumber pushButton  = jetsontx1_pin13 ;      // Input
     // Make the button and led available in user space
     gpioExport(pushButton) ;
     gpioExport(redLED) ;
